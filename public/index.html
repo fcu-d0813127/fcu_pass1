@@ -191,6 +191,8 @@
     sec = sec.toString();
     document.getElementsByClassName("ng-binding")[24].innerHTML = `最後更新時間：${year}/${month}/${day} ${am_or_pm} ${hour.padStart(2, '0')}/${min.padStart(2, '0')}/${sec.padStart(2, '0')}`;
     document.getElementById("pass_color").className = `backgcolor${now.getDay()}`;
-    window.scrollTo(0, 0);
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
   </script>
 </html>
