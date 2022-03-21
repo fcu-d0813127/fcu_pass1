@@ -1,0 +1,80 @@
+.modal-header {
+  padding: 0px 10px;
+}
+
+.modal-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+.modal-footer {
+  padding: 7px 15px;
+}
+
+.modal-button {
+  margin: 0;
+  background: #337ab7;
+}
+
+.body-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes breathe {
+  0% {
+    opacity: 0.9;
+    box-shadow: 0 1px 2px rgb(255 215 0 / 40%), 0 1px 1px rgb(255 215 0 / 10%) inset;
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0 1px 30px 8px rgb(255 215 0), 0 1px 20px rgb(255 215 0) inset;
+  }
+}
+
+.circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 999em;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+  animation-timing-function: ease-in-out;
+  animation-name: breathe;
+  animation-duration: 1200ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.content {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  font-size: 60px;
+}
+
+.dvtitle {
+  font-size: 20px;
+}
+
+.pass-group {
+  text-align: center;
+}
+
+.pass {
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.footer {
+  margin-top: 10px;
+  font-size: 10px;
+}
