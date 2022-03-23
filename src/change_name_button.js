@@ -15,7 +15,8 @@ const ChangeNameButton = () => {
   };
 
   const getAllCacheData = async () => {
-    const url = 'http://localhost:3000/';
+    const url = 'https://fcu-d0813127.github.io/fcu_pass1/';
+    // const url = 'http://localhost:3000/';
     const names = await caches.keys();
     for (let i = 0; i < names.length; i++) {
       const cacheStorage = await caches.open(names[i]);
@@ -40,7 +41,8 @@ const ChangeNameButton = () => {
       return;
     }
     setName(name);
-    addDataIntoCache('name', 'http://localhost:3000/', name);
+    addDataIntoCache('name', 'https://fcu-d0813127.github.io/fcu_pass1/', name);
+    // addDataIntoCache('name', 'http://localhost:3000/', name);
   };
 
   getAllCacheData();

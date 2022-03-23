@@ -20,6 +20,7 @@ const Background = () => {
   const generateNow_ = () => {
     let clock, hour;
     if (dateForm_.hour <= 12) {
+      hour = dateForm_.hour;
       clock = '上午';
     } else {
       hour = dateForm_.hour - 12;
